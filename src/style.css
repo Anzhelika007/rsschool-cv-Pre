@@ -537,7 +537,6 @@ button {
 .about__more-img {
   display: block;
   max-width: 300px;
-  filter: grayscale(1);
 }
 .about__education {
   padding-bottom: clamp(30px, 8vw, 100px);
