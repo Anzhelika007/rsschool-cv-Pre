@@ -1,14 +1,30 @@
 @media all and (max-width: 770px) {
-    .header__bottom {
-        &-title {
-            white-space: wrap;
+    .header {
+        &__top {
+            padding-top: 20px;
         }
 
-        &-link {
-            left: 50%;
-            transform: translateX(-50%);
-            margin: auto;
+        &__bottom {
+            &-title {
+                white-space: wrap;
+            }
+
+            &-link {
+                left: 50%;
+                transform: translateX(-50%);
+                margin: auto;
+            }
+
+            &-link {
+                padding: clamp(10px, 3vw, 25px) clamp(15px, 3vw, 34px);
+                height: clamp(40px, 12vw, 65px);
+            }
+
         }
+    }
+
+    .layout-2-column {
+        min-height: calc(100vh - 48px);
     }
 
     .navigation__burger {
