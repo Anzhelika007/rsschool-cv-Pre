@@ -62,7 +62,7 @@ a {
   font-family: "Montserrat", Verdana, sans-serif;
 }
 
-.hire-Me__box-cv, .hire-Me__box-contact, .header__bottom-link, button, h5, h4, h3, h2, h1, body {
+.hire-Me__box-cv, .hire-Me__box-contact, .hire-Me__title, .header__bottom-link, button, h4, h3, h2, h1, body {
   font-family: "Clash Display", Verdana, sans-serif;
 }
 
@@ -133,22 +133,14 @@ h1 {
 }
 
 h2 {
-  font-size: 6.4rem;
-  line-height: 120%;
-  font-weight: 500;
-  font-style: normal;
-  color: #FFFFFF;
-}
-
-h3 {
-  font-size: 4.8rem;
+  font-size: clamp(2.8rem, 5vw, 4.8rem);
   line-height: 120%;
   font-weight: 500;
   font-style: normal;
   color: #272727;
 }
 
-h4 {
+h3 {
   font-size: 2.8rem;
   line-height: 4.7rem;
   font-weight: 500;
@@ -156,7 +148,7 @@ h4 {
   color: #272727;
 }
 
-h5 {
+h4 {
   font-size: 2.4rem;
   line-height: 2.9rem;
   font-weight: 500;
@@ -191,6 +183,7 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  justify-content: space-evenly;
 }
 .layout-3-column > * {
   flex-basis: 30%;
@@ -269,7 +262,7 @@ button {
   white-space: nowrap;
   position: absolute;
   right: 0;
-  top: 256px;
+  top: clamp(20px, 30vh, 256px);
 }
 .header__bottom-text {
   color: #BCBCBC;
@@ -279,7 +272,7 @@ button {
   white-space: wrap;
   position: absolute;
   left: 40px;
-  top: 385px;
+  top: clamp(20px, 60vh, 385px);
   text-align: start;
   border-top: 1px solid #BCBCBC;
 }
@@ -387,13 +380,20 @@ button {
 .footer {
   background-color: #272727;
   text-align: center;
-  padding-top: 120px;
+  padding-top: clamp(30px, 8vw, 100px);
 }
 
 .hire-Me {
   gap: 55px;
   padding-bottom: 55px;
   border-bottom: 1px solid #FFFFFF;
+}
+.hire-Me__title {
+  font-size: clamp(3rem, 5vw, 6.4rem);
+  line-height: 120%;
+  font-weight: 500;
+  font-style: normal;
+  color: #FFFFFF;
 }
 .hire-Me__box {
   display: flex;
@@ -403,7 +403,7 @@ button {
   display: inline-block;
 }
 .hire-Me__box-contact {
-  font-size: 2.4rem;
+  font-size: clamp(20px, 5vw, 2.4rem);
   line-height: 2.9rem;
   font-weight: 500;
   font-style: normal;
@@ -417,7 +417,7 @@ button {
   box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
 }
 .hire-Me__box-cv {
-  font-size: 2.4rem;
+  font-size: clamp(20px, 5vw, 2.4rem);
   line-height: 2.9rem;
   font-weight: 500;
   font-style: normal;
@@ -445,6 +445,7 @@ button {
   padding: 55px 0;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .footer__box-social {
   display: flex;
@@ -455,6 +456,7 @@ button {
 .footer__box-social-link {
   display: inline-block;
   color: #BCBCBC;
+  font-size: 1.8rem;
 }
 .footer__box-social-link:hover {
   color: #FFFFFF;
@@ -471,12 +473,13 @@ button {
 }
 
 .footer__box-text {
+  font-size: 1.8rem;
   color: #BCBCBC;
   white-space: nowrap;
 }
 
 .about {
-  padding: 100px 0;
+  padding: clamp(30px, 8vw, 100px) 0;
   position: relative;
 }
 .about__wrapper {
@@ -495,7 +498,7 @@ button {
   right: 50%;
   background-color: #272727;
   display: block;
-  width: 612px;
+  width: clamp(300px, 20vw, 612px);
   height: 1px;
   transform: translateX(50%);
 }
@@ -520,16 +523,16 @@ button {
 .about__box__items:last-child > .about__box__items-number, .about__box__items:last-child > .about__box__items-title {
   border-right: none;
 }
+.about__more {
+  padding-bottom: 32px;
+  border-bottom: 1px solid #272727;
+  flex-wrap: wrap;
+}
 .about__more-title {
   text-align: start;
 }
 .about__more-text {
   text-align: justify;
-}
-.about__more {
-  padding-bottom: 32px;
-  border-bottom: 1px solid #272727;
-  flex-wrap: wrap;
 }
 .about__more-img {
   display: block;
@@ -537,7 +540,7 @@ button {
   filter: grayscale(1);
 }
 .about__education {
-  padding-bottom: 100px;
+  padding-bottom: clamp(30px, 8vw, 100px);
 }
 .about__education__title {
   display: flex;
@@ -566,7 +569,7 @@ button {
 }
 
 .code {
-  padding: 100px 0;
+  padding: clamp(30px, 8vw, 100px) 0;
 }
 .code__wrapper {
   gap: 32px;
@@ -582,7 +585,7 @@ button {
   right: 50%;
   background-color: #272727;
   display: block;
-  width: 612px;
+  width: clamp(300px, 20vw, 612px);
   height: 1px;
   transform: translateX(50%);
 }
@@ -594,7 +597,7 @@ button {
   align-items: normal;
   text-align: center;
   gap: 32px;
-  padding-bottom: 100px;
+  padding-bottom: clamp(30px, 8vw, 100px);
 }
 .portfolio__title {
   padding-bottom: 32px;
@@ -607,7 +610,7 @@ button {
   right: 50%;
   background-color: #272727;
   display: block;
-  width: 612px;
+  width: clamp(300px, 20vw, 612px);
   height: 1px;
   transform: translateX(50%);
 }
@@ -652,11 +655,16 @@ button {
     margin: auto;
   }
   .header__bottom-link {
-    padding: clamp(10px, 3vw, 25px) clamp(15px, 3vw, 34px);
-    height: clamp(40px, 12vw, 65px);
+    padding: clamp(10px, 3vw, 25px) clamp(10px, 3vw, 34px);
+    height: clamp(45px, 12vw, 65px);
   }
   .layout-2-column {
     min-height: calc(100vh - 48px);
+  }
+  .about__more-text,
+  .code__text {
+    text-align: justify;
+    flex-basis: 90%;
   }
   .navigation__burger {
     display: flex;
@@ -685,6 +693,69 @@ button {
   .navigation {
     flex-direction: column;
     row-gap: 30px;
+  }
+  .code-code {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+  .footer__box {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .footer__box-social {
+    gap: 20px;
+  }
+  .footer__box-social > * {
+    padding-right: 0;
+  }
+}
+@media all and (max-width: 525px) {
+  .layout-3-column {
+    flex-wrap: wrap;
+  }
+  .layout-3-column > * {
+    flex-basis: 100%;
+    padding: 0px;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .layout-3-column > * > * {
+    border: none;
+  }
+  .about__more-text {
+    text-align: justify;
+  }
+  .about__box {
+    margin-bottom: 20px;
+  }
+  .about__education__title {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .code-code {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+  }
+  .hire-Me__box {
+    flex-direction: column;
+  }
+  .footer__box-social {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .header__top-name {
+    color: black;
+  }
+  .header__bottom-text {
+    display: none;
+  }
+}
+@media all and (max-width: 370px) {
+  .header__bottom-link {
+    max-width: 120px;
+    padding: 10px 7px;
   }
 }
 

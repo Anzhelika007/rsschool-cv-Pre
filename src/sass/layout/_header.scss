@@ -77,7 +77,7 @@
             white-space: nowrap;
             position: absolute;
             right: 0;
-            top: 256px;
+            top: clamp(20px, 30vh, 256px);
         }
 
         &-text {
@@ -88,7 +88,7 @@
             white-space: wrap;
             position: absolute;
             left: 40px;
-            top: 385px;
+            top: clamp(20px, 60vh, 385px);
             text-align: start;
             border-top: 1px solid $grey-middle;
         }

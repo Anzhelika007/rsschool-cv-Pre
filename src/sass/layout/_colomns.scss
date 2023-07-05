@@ -1,5 +1,6 @@
 .layout-3-column {
     @include columns($width: 30%);
+    justify-content: space-evenly;
 
     &::after {
         content: '';

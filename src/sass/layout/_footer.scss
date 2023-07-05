@@ -1,7 +1,7 @@
 .footer {
     background-color: $black-middle;
     text-align: center;
-    padding-top: 120px;
+    padding-top: $padding-section-top;
 }
 
 .hire-Me {
@@ -10,6 +10,11 @@
     padding-bottom: 55px;
 
     border-bottom: 1px solid $white;
+
+    &__title {
+        @include font-base($size: clamp(3.0rem, 5vw, 6.4rem), $height: 120%, $weight: 500);
+        color: $white;
+    }
 
     &__box {
         display: flex;
@@ -21,7 +26,7 @@
     }
 
     &__box-contact {
-        @include font-base($size: 2.4rem, $height: 2.9rem, $weight: 500);
+        @include font-base($size: clamp(20px, 5vw, 2.4rem), $height: 2.9rem, $weight: 500);
         padding: 13px 20px;
         background-color: $orange;
         border-radius: 42px;
@@ -34,7 +39,7 @@
     }
 
     &__box-cv {
-        @include font-base($size: 2.4rem, $height: 2.9rem, $weight: 500);
+        @include font-base($size: clamp(20px, 5vw, 2.4rem), $height: 2.9rem, $weight: 500);
         padding: 13px 27px 13px 67px;
         border-radius: 42px;
         color: $orange;
@@ -62,6 +67,7 @@
     padding: 55px 0;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     &-social {
         display: flex;
@@ -75,6 +81,7 @@
     &-social-link {
         display: inline-block;
         color: $grey-middle;
+        font-size: 1.8rem;
 
         &:hover {
             color: $white;
@@ -83,10 +90,6 @@
         }
     }
 }
-
-
-
-.footer__box-social-item {}
 
 .footer__box-linkrs {
     display: block;
@@ -99,6 +102,7 @@
 }
 
 .footer__box-text {
+    font-size: 1.8rem;
     color: $grey-middle;
     white-space: nowrap;
 }

@@ -16,21 +16,16 @@ h1 {
 }
 
 h2 {
-    @include font-base($size: 6.4rem, $height: 120%, $weight: 500);
-    color: $white;
-}
-
-h3 {
-    @include font-base($size: 4.8rem, $height: 120%, $weight: 500);
+    @include font-base($size: clamp(2.8rem, 5vw, 4.8rem), $height: 120%, $weight: 500);
     color: $black-middle;
 }
 
-h4 {
+h3 {
     @include font-base($size: 2.8rem, $height: 4.7rem, $weight: 500);
     color: $black-middle;
 }
 
-h5 {
+h4 {
     @include font-base($size: 2.4rem, $height: 2.9rem, $weight: 500);
     color: $black-middle;
 }

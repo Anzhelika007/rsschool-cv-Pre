@@ -14,7 +14,7 @@
         position: relative;
 
         &::after {
-            @include line(612px, $right: 50%);
+            @include line(clamp(300px, 20vw, 612px), $right: 50%);
             transform: translateX(50%);
         }
     }
@@ -48,7 +48,11 @@
         border-right: none;
     }
 
-    &__more {}
+    &__more {
+        padding-bottom: 32px;
+        border-bottom: 1px solid $black-middle;
+        flex-wrap: wrap;
+    }
 
     &__more-title {
         text-align: start;
@@ -56,12 +60,6 @@
 
     &__more-text {
         text-align: justify;
-    }
-
-    &__more {
-        padding-bottom: 32px;
-        border-bottom: 1px solid $black-middle;
-        flex-wrap: wrap;
     }
 
     &__more-img {
@@ -113,7 +111,7 @@
         padding-bottom: 32px;
 
         &::after {
-            @include line(612px, $right: 50%);
+            @include line(clamp(300px, 20vw, 612px), $right: 50%);
             transform: translateX(50%);
         }
     }
@@ -138,7 +136,7 @@
         position: relative;
 
         &::after {
-            @include line(612px, $right: 50%);
+            @include line(clamp(300px, 20vw, 612px), $right: 50%);
             transform: translateX(50%);
         }
     }

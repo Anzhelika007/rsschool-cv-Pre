@@ -9,7 +9,7 @@ $black: #000000;
 $orange: #E84F26;
 $yellow: #E1DD00;
 
-$padding-section-top: 100px;
+$padding-section-top: clamp(30px, 8vw, 100px);
 
 //width
 $maket-width: 1440px;
