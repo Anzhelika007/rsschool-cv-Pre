@@ -631,7 +631,6 @@ button {
 .portfolio__project-img {
   display: block;
   width: 336px;
-  height: 166px;
   background: #AFACAC;
   margin: 0 auto 24px;
   border-top-left-radius: 5px;
@@ -731,7 +730,11 @@ button {
   .about__education__title {
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     gap: 30px;
+  }
+  .about__education__title > * {
+    text-align: center;
   }
   .code-code {
     font-size: 0.8rem;

@@ -115,7 +115,12 @@
         &__education__title {
             flex-direction: column;
             justify-content: space-between;
+            align-items: center;
             gap: 30px;
+
+            &>* {
+                text-align: center;
+            }
         }
     }
 
